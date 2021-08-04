@@ -1,0 +1,13 @@
+.button.button-primary, button, input[type=button], .btn, input[type="submit"], ul[id^="nv-primary-navigation"] li.button.button-primary > a, .menu li.button.button-primary > a, .wp-block-button.is-style-primary .wp-block-button__link, .wc-block-grid .wp-block-button .wp-block-button__link, form input[type="submit"], form button[type="submit"], #comments input[type="submit"] {
+  background-color: var(--e-global-color-primary);
+}
+
+@media (min-width: 960px) {
+  .nv-index-posts, .nv-single-page-wrap, .nv-single-post-wrap {
+      margin-bottom: 0;
+  }
+}
+
+.nv-page-title {
+  display: none;
+}

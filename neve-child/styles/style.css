@@ -40,7 +40,7 @@ div#bbpress-forums > div.bbp-pagination > div.bbp-pagination-links {
 }
 
 @media screen and (max-width: 1024px) {
-  div#bbpress-forums > ul.bbp-topics > li.bbp-topic-voice-count {
+  div#bbpress-forums > li.bbp-topic-voice-count {
     display: none;
   }
 }

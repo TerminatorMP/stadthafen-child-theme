@@ -14,12 +14,12 @@ div#bbpress-forums {
       // mehr styles
     }
   }
-  & > ul.bbp-topics {
-    & > li.bbp-topic-voice-count {
-      @media screen and (max-width: 1024px) {
-        display: none;
-      }
+  & > li.bbp-topic-voice-count {
+    @media screen and (max-width: 1024px) {
+      display: none;
     }
+  }
+  & > ul.bbp-topics {
     & > li.bbp-header {
       color: var(--e-global-color-text);
       background: var(--e-global-color-secondary);

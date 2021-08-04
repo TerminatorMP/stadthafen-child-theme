@@ -1,6 +1,53 @@
+div.bbppress-forums {
+  & > div.bbp-breadcrumb,
+  & > div.bbp-template-notice.info {
+    display: none;
+  }
 
-.bbp {
-  &-breadcrumb-current {
-    color: orangered;
+  & > div.bbp-pagination {
+    & > div.bbp-pagination-count {
+      display: none;
+    }
+
+    & > div.bbp-pagination-links {
+      float: none;
+      // mehr styles
+    }
+  }
+  & > ul.bbp-topics {
+    & > li.bbp-topic-voice-count {
+      @media screen and (max-width: 1024px) {
+        display: none;
+      }
+    }
+    & > li.bbp-header {
+      color: var(--e-global-color-text);
+      background: var(--e-global-color-secondary);
+      font-size: 1.25rem;
+      padding: 0;
+      & > ul.forum-titles {
+        & > li {
+          padding: 0.25rem 0.5rem;
+        }
+      }
+    }
+    & > li.bbp-body {
+      & > ul {
+        &.odd {
+          background-color: var(--e-global-color-secondary);
+        }
+        &.even {
+          background-color: #dddddd;
+        }
+        & > li.bbp-topic-title {
+          & > p.bbp-topic-meta {
+            display: none;
+          }
+        }
+      }
+    }
+    & > li.bbp-footer {
+      display: none;
+    }
   }
 }

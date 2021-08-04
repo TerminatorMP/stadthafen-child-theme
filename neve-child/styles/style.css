@@ -13,15 +13,62 @@ Text Domain:    neve
 Tags: blog, custom-logo, e-commerce, rtl-language-support, post-formats, grid-layout, one-column, two-columns, custom-background, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, flexible-header, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, accessibility-ready, wide-blocks, block-styles
 */
 .button.button-primary, button, input[type=button], .btn, input[type="submit"], ul[id^="nv-primary-navigation"] li.button.button-primary > a, .menu li.button.button-primary > a, .wp-block-button.is-style-primary .wp-block-button__link, .wc-block-grid .wp-block-button .wp-block-button__link, form input[type="submit"], form button[type="submit"], #comments input[type="submit"] {
-  background-color: var(--e-global-color-primary); }
+  background-color: var(--e-global-color-primary);
+}
 
 @media (min-width: 960px) {
   .nv-index-posts, .nv-single-page-wrap, .nv-single-post-wrap {
-    margin-bottom: 0; } }
+    margin-bottom: 0;
+  }
+}
+
 .nv-page-title {
-  display: none; }
+  display: none;
+}
 
-.bbp-breadcrumb-current {
-  color: orangered; }
+div.bbppress-forums > div.bbp-breadcrumb,
+div.bbppress-forums > div.bbp-template-notice.info {
+  display: none;
+}
 
+div.bbppress-forums > div.bbp-pagination > div.bbp-pagination-count {
+  display: none;
+}
+
+div.bbppress-forums > div.bbp-pagination > div.bbp-pagination-links {
+  float: none;
+}
+
+@media screen and (max-width: 1024px) {
+  div.bbppress-forums > ul.bbp-topics > li.bbp-topic-voice-count {
+    display: none;
+  }
+}
+
+div.bbppress-forums > ul.bbp-topics > li.bbp-header {
+  color: var(--e-global-color-text);
+  background: var(--e-global-color-secondary);
+  font-size: 1.25rem;
+  padding: 0;
+}
+
+div.bbppress-forums > ul.bbp-topics > li.bbp-header > ul.forum-titles > li {
+  padding: 0.25rem 0.5rem;
+}
+
+div.bbppress-forums > ul.bbp-topics > li.bbp-body > ul.odd {
+  background-color: var(--e-global-color-secondary);
+}
+
+div.bbppress-forums > ul.bbp-topics > li.bbp-body > ul.even {
+  background-color: #dddddd;
+}
+
+div.bbppress-forums > ul.bbp-topics > li.bbp-body > ul > li.bbp-topic-title > p.bbp-topic-meta {
+  display: none;
+}
+
+div.bbppress-forums > ul.bbp-topics > li.bbp-footer {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */

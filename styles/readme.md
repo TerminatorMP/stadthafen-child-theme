@@ -3,6 +3,7 @@
 color: #ffffff;
 color: #111111;
 
+// root
 --e-global-color-nvprimaryaccent: #3333f5;
 --e-global-color-nvsecondaryaccent: #f4c133;
 --e-global-color-nvsitebg: #ffffff;
@@ -13,7 +14,7 @@ color: #111111;
 --e-global-color-nvc1: #77b978;
 --e-global-color-nvc2: #f37262;
 
-//
+// elementor kit
 --e-global-color-primary: #30d1b7;
 --e-global-color-secondary: #eeeeee;
 --e-global-color-text: #393e46;
@@ -28,7 +29,8 @@ color: #111111;
 --e-global-typography-accent-font-family: "Roboto";
 --e-global-typography-accent-font-weight: 500;
 background-color: var(--e-global-color-secondary);
-//
+
+// neve
 --nv-primary-accent: #3333f5;
     --nv-secondary-accent: #f4c133;
     --nv-site-bg: #ffffff;

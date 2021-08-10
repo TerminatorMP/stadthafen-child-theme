@@ -1,3 +1,7 @@
+body {
+  color: var(--e-global-color-accent);
+}
+
 .button.button-primary, button, input[type=button], .btn, input[type="submit"], ul[id^="nv-primary-navigation"] li.button.button-primary > a, .menu li.button.button-primary > a, .wp-block-button.is-style-primary .wp-block-button__link, .wc-block-grid .wp-block-button .wp-block-button__link, form input[type="submit"], form button[type="submit"], #comments input[type="submit"] {
   background-color: var(--e-global-color-primary);
 }
@@ -10,4 +14,12 @@
 
 .nv-page-title {
   display: none;
+}
+
+a {
+  color: var(--e-global-color-11d7d70);
+
+  &:hover,:focus {
+    color: inherit;
+  }
 }

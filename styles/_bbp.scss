@@ -1,3 +1,62 @@
+.bbp-topic-freshness-author .bbp-author {
+  &-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  &-name {
+    font-size: 12px;
+    color: var(--e-global-color-7939a86);
+  }
+  &-avatar img {
+    border-radius: 50%;
+  }
+}
+
+.bbp-replies {
+
+  & .bbp-header {
+    display: none;
+  }
+
+  & .bbp-reply-header {
+    border: none;
+
+    & .bbp-meta span,a {
+      font-size: 12px;
+    }
+  }
+
+  & .bbp-body {
+    & div.hentry {
+      --reply-padding: 40px;
+      display: flex;
+      margin-bottom: 30px;
+
+      & .bbp-reply-author {
+        padding: var(--reply-padding);
+        width: 200px !important;
+      }
+
+      & .bbp-reply-content {
+        margin: 0 !important;
+        padding: var(--reply-padding) !important;
+      }
+    }
+  }
+
+  & .bbp-footer {
+    display: none;
+  }
+}
+
+.bbp-reply-author {
+  & .bbp-author-avatar img {
+    border-radius: 50%;
+  }
+}
+
 div#bbpress-forums {
   & > div.bbp-breadcrumb,
   & > div.bbp-template-notice.info {
@@ -33,13 +92,31 @@ div#bbpress-forums {
     }
     & > li.bbp-body {
       & > ul {
+
+        display: flex;
+        align-items: center;
+        padding: 30px 8px;
+        border-bottom: 1px solid rgba(0,0,0, .1);
+
+        &:last-child {
+          border: none;
+        }
+
         &.odd {
-          background-color: var(--e-global-color-secondary);
+          background-color: transparent;
         }
         &.even {
-          background-color: #dddddd;
+          background-color: transparent;
         }
+
+        & .bbp-topic-freshness {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+        } 
+
         & > li.bbp-topic-title {
+
           & > p.bbp-topic-meta {
             display: none;
           }
@@ -50,4 +127,9 @@ div#bbpress-forums {
       display: none;
     }
   }
+}
+
+
+#bbpress-forums ul.bbp-forums, #bbpress-forums ul.bbp-lead-topic, #bbpress-forums ul.bbp-replies, #bbpress-forums ul.bbp-search-results, #bbpress-forums ul.bbp-topics {
+  font-size: 17px;
 }
